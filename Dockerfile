@@ -1,4 +1,7 @@
 FROM        ganow/ubuntu-base
 MAINTAINER  Yoshihiro Nagano <y.nagano.92@gmail.com>
 
-RUN         anyenv install pyenv
+ENV		HOME ''
+ENV		PATH /.anyenv/bin:$PATH
+RUN         zsh -c 'anyenv install pyenv'
+
