@@ -1,7 +1,7 @@
 FROM        ganow/ubuntu-base
 MAINTAINER  Yoshihiro Nagano <y.nagano.92@gmail.com>
 
-RUN         apt-get install -y --no-install-recommends readline
+RUN         apt-get install -y --no-install-recommends libreadline6 libreadline6-dev
 
 ENV		      PATH /.anyenv/bin:$PATH
 ADD         anyenv_init.sh tmp/
